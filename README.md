@@ -2,11 +2,7 @@
 
 An [Asity](http://asity.cettia.io) bridge for [Play framework 2](http://www.playframework.org/) to allow run an Asity application on Play framework 2.
 
-**Note**
-
-* With the current implementation written in Play Java API, it's not possible to send and receive text frame and binary frame together via a WebSocket connection. It will be fixed by rewriting implementation in Play Scala API. [cettia-java-platform#3](https://github.com/cettia/asity/issues/3)
-
-**[Example](https://github.com/cettia/cettia-examples/tree/master/archetype/cettia-java-server/platform/play2)**
+# Recipe
 
 Add the following dependency to your `build.sbt` or include it on your classpath manually.
 
@@ -71,3 +67,11 @@ object Global extends GlobalSettings {
   }
 }
 ```
+
+## Roadmap
+
+* Support Play 2.4.
+* Rewrite in Scala [#1](https://github.com/flowersinthesand/asity-play2/issues/1).
+* Add tests extending ServerHttpExchangeTestBase and ServerWebSocketTestBase.
+* Add examples.
+* Provide a helper class.
